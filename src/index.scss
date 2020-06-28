@@ -3,30 +3,29 @@
   src: url("fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Montserrat-Black';
-  src: url("fonts/Montserrat/Montserrat-Black.ttf") format("truetype");
+  font-family: 'Montserrat-Bold';
+  src: url("fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
 }
 h1 {
-  font-size: 42px;
-  line-height: 130%;
-  color: #ffffff;
+  font-size: 48px;
+  line-height: 59px;
 }
 h2 {
-  font-size: 36px;
+  font-size: 40px;
   line-height: 49px;
-  color: #ffffff;
 }
 h3 {
   font-size: 28px;
 }
+h4{
+  font-size: 24px;
+}
 p{
   font-size: 20px;
   line-height: 142%;
-  color: #ffffff;
-  padding-top: 24px;
 }
 strong {
-  font-family: Montserrat-Black, serif;
+  font-family: Montserrat-Bold, serif;
   font-weight: 400;
 }
 *{

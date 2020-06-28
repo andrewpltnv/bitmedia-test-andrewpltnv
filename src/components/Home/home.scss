@@ -3,7 +3,7 @@
   src: url("../../fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
 }
 header{
-  background: url("header-svg.svg")no-repeat;
+  background: url("Header/header-svg.svg")no-repeat;
   -moz-background-size: 100%; /* Firefox 3.6+ */
   -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
   -o-background-size: 100%; /* Opera 9.6+ */
@@ -12,12 +12,23 @@ header{
   padding: 0 ;
   display: flex;
 }
-.appco--main{
+.brand--name{
   padding: 24px 0 48px 0;
 }
 .text--header{
   margin: 0 9vw 0 9vw;
-  max-width: 570px;
+  max-width: 620px;
+    p{
+      padding-top: 24px;
+      width: 95%;
+    }
+    h1, h2, p{
+      color: #ffffff;
+      letter-spacing: 0.006em;
+    }
+    a{
+      text-decoration: none;
+    }
 }
 .view--stats--button{
   height: 56px;
@@ -27,6 +38,7 @@ header{
   line-height: 142%;
   color: #3A80BA;
   border-radius: 8px;
+  border: none;
   margin-top: 32px;
 }
 #mobile{
@@ -34,11 +46,27 @@ header{
 }
 .centered--text{
   margin: 16px auto 24px auto;
-  max-width: 420px;
   text-align: center;
-  font-weight: 500;
+  padding: 0 12px 0 12px;
+    h3{
+      max-width: 420px;
+      font-weight: 500;
+      color: #1A1A1A;
+    }
+    h4{
+      color: #1A1A1A;
+    }
+    p{
+      max-width: 710px;
+      color: #7E7E7E;
+    }
 }
-@media all and (max-width: 650px){
+@media all and (max-width: 1000px){
+  .text--header{
+    margin: 0 0 0 9vw;
+  }
+}
+@media all and (max-width: 700px){
   header{
     flex-direction: column;
     height: auto;
@@ -48,9 +76,11 @@ header{
   }
   .text--header{
     display: inline-grid;
+    margin: 0 9vw 0 9vw;
   }
   .view--stats--button{
     margin: 32px auto 0 auto;
   }
 }
+
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router } from "react-router-dom";
+import { Router, Route } from "react-router-dom";
 import {createBrowserHistory} from "history";
 import * as serviceWorker from './serviceWorker';
 import './index.scss';
@@ -10,7 +10,7 @@ const history = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={history}>
-    <App />
+    <Route path="/" component={App}/>
   </Router>,
   document.getElementById('root')
 );

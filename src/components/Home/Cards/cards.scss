@@ -1,0 +1,32 @@
+.cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 128px;
+}
+.card{
+  max-width: 380px;
+  height: auto;
+  margin: 16px 10px 0 10px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 32px;
+    img{
+      margin: 48px auto 40px auto;
+    }
+    h4{
+      margin: 0 auto 14px auto;
+    }
+    p{
+      font-size: 16px;
+      margin: 0 32px 48px 32px;
+    }
+}
+@media all and (max-width: 700px){
+  .cards{
+    flex-direction: column;
+  }
+  .card{
+    margin: 16px auto 0 auto;
+  }
+}
