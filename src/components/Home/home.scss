@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../../fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+}
+header{
+  background: url("header-svg.svg")no-repeat;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+  background-size: cover;
+  height: 655px;
+  padding: 0 ;
+  display: flex;
+}
+.appco--main{
+  padding: 24px 0 48px 0;
+}
+.text--header{
+  margin: 0 9vw 0 9vw;
+  max-width: 570px;
+}
+.view--stats--button{
+  height: 56px;
+  width: 154px;
+  font-family: Montserrat, serif;
+  font-size: 16px;
+  line-height: 142%;
+  color: #3A80BA;
+  border-radius: 8px;
+  margin-top: 32px;
+}
+#mobile{
+  margin: 70px auto 30px auto;
+}
+.centered--text{
+  margin: 16px auto 24px auto;
+  max-width: 420px;
+  text-align: center;
+  font-weight: 500;
+}
+@media all and (max-width: 650px){
+  header{
+    flex-direction: column;
+    height: auto;
+  }
+  #mobile{
+    margin-top: 32px;
+  }
+  .text--header{
+    display: inline-grid;
+  }
+  .view--stats--button{
+    margin: 32px auto 0 auto;
+  }
+}
+
